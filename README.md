@@ -18,7 +18,7 @@ I have written a [companion blog post](http://yeokhengmeng.com/2018/01/make-the-
 * 64MB SDRAM
 * 48x IDE CD ROM Drive
 * [Gotek 1.44MB floppy emulator](https://www.philscomputerlab.com/gotek-floppy-emulator.html)
-* CF-IDE adapter
+* CompactFlash-IDE adapter + 32GB Sandisk Extreme CF card
 * 10Mbps 3Com Etherlink III [3c509B](https://en.wikipedia.org/wiki/3Com_3c509) (ISA)
 * [Sound Blaster 16](https://en.wikipedia.org/wiki/Sound_Blaster_16) CT2950 PnP (ISA) Unfortunately, this card uses [CQM](https://en.wikipedia.org/wiki/Sound_Blaster_16#OPL-3_FM_and_CQM_Synthesis_options).
 * 1x Parallel Port
