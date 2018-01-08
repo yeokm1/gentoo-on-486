@@ -405,12 +405,12 @@ emerge net-misc/dhcpcd
 # NTP
 emerge net-misc/ntp
 
-# If ALSA is enabled
+# If ALSA is enabled in the USE flags
 emerge media-libs/alsa-lib
 emerge media-sound/alsa-utils
 rc-update add alsasound boot
 
-# If FFmpeg is enabled
+# If FFmpeg is enabled is enabled in the USE flags
 emerge media-video/ffmpeg
 ```
 
@@ -557,7 +557,7 @@ mkdir /var/www/localhost/htdocs
 # Create a dummy page
 echo 'Hello, world!' > /var/www/localhost/htdocs/index.html
 nano /etc/nginx/nginx.conf
-# Change `listen 127.0.0.1;` -> `listen 0.0.0.0`
+# Change `listen 127.0.0.1;` -> `listen 0.0.0.0;`
 
 /etc/init.d/nginx start
 
