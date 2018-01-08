@@ -410,7 +410,7 @@ emerge media-libs/alsa-lib
 emerge media-sound/alsa-utils
 rc-update add alsasound boot
 
-# If FFmpeg is enabled is enabled in the USE flags
+# If FFmpeg is enabled in the USE flags
 emerge media-video/ffmpeg
 ```
 
