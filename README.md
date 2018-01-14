@@ -259,7 +259,7 @@ I enable traditional options as well as some modern ones as so the kernel can st
 
 ##### Bus Options
 * Check ISA support
-*	* Check EISA support (EISA support is actually unnecessary through as my machine does not have EISA slots)
+*	* Check EISA support (EISA support is actually unnecessary though as my machine does not have EISA slots)
 * * * Check everything here except "Generic PCI/ISA bridge" as my IBM PS/1 does not have PCI slots
 
 ##### Device Drivers
