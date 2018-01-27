@@ -115,14 +115,14 @@ date
 ntpd -q -g
 ```
 
-Download the latest i486 stage3 tarball which at the time of writing is named `stage3-i486-20171212T011501Z.tar.bz2`. I highly recommend downloading from a mirror close to you instead of using the official one.
+Download the latest i486 stage3 tarball which at the time of writing is named `stage3-i486-20180117T214502Z.tar.xz`. I highly recommend downloading from a mirror close to you instead of using the official one.
 
 ```bash
 cd /mnt/gentoo
-wget http://gentoo.aditsu.net:8000/releases/x86/autobuilds/current-stage3-i486/stage3-i486-20171212T011501Z.tar.bz2
+wget http://gentoo.aditsu.net:8000/releases/x86/autobuilds/current-stage3-i486/stage3-i486-20180117T214502Z.tar.xz
 
 # Untar the tarball. If you wish, you can add the `v` verbose option.
-tar xjpf stage3-i486-20171212T011501Z.tar.bz2 --xattrs --numeric-owner
+tar xpf stage3-i486-20180117T214502Z.tar.xz --xattrs-include='*.*' --numeric-owner
 ```
 
 The guide says you should edit the `/mnt/gentoo/etc/portage/make.conf` and adjust the *CFLAGS* and *CXXFLAGS* to suit your system. However for this case, we can skip this as the default is already the 486. But do verify just in case.
