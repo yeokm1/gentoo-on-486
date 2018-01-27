@@ -84,9 +84,9 @@ The guide suggests 4 partitions with the first one being for the BIOS boot parti
 
 | Partition     | Filesystem | Size         | Description |
 | ------------- | ---------- | ------------ | ----------- |
-| /dev/sda1	    | ext2 	     | 128M        	| Boot        |
-| /dev/sda2	    | (swap) 	   | 2048M	       | Swap        |
-| /dev/sda3	    | ext4 	     | Rest of disk | Root        |
+| /dev/sda1	    | ext2       | 128M         | Boot        |
+| /dev/sda2	    | (swap)     | 2048M        | Swap        |
+| /dev/sda3	    | ext4       | Rest of disk | Root        |
 
 Just a note, ancient PCs have a [504MiB barrier](http://www.pcguide.com/ref/hdd/bios/sizeMB504-c.html). This means that the boot partition should reside entirely within this limit to be bootable. Once Linux is started, it can recognise the entire disk.
 
@@ -175,14 +175,14 @@ eselect news read
 
 ### Set system profile
 
-At time of writing, there a 2 sets of profiles `13` and `17` with the former being the default for the old x86 install CD. We should use the newer profile 17 going forward.
+The default system profile is `[10]  default/linux/x86/17.0 (stable)` which I use.
 
 Changing system profiles will invoke a long compilation process especially for `GCC`, to save time, you can skip this step for your initial test builds.
 
 ```bash
 eselect profile list
 
-# Set to profile "default/linux/x86/17.0" which is the 10th profile at time of writing
+# Example changing to profile "default/linux/x86/17.0" which is the 10th profile at time of writing
 eselect profile set 10
 # If profile change is required, run the following:
 emerge --ask --update --deep --newuse @world
@@ -259,8 +259,6 @@ I enable traditional options as well as some modern ones as so the kernel can st
 
 ##### Bus Options
 * Check ISA support
-*	* Check EISA support (EISA support is actually unnecessary though as my machine does not have EISA slots)
-* * * Check everything here except "Generic PCI/ISA bridge" as my IBM PS/1 does not have PCI slots
 
 ##### Device Drivers
 * Plug and Play support
