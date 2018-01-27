@@ -446,6 +446,11 @@ emerge dev-lang/go
 
 # Gentoo's default Python version is only 3.5 at time of writing. You can install Python 3.6 but Portage and others will still remain on Python 3.5.
 emerge dev-lang/python:3.6
+
+# Command line web browsers
+emerge www-client/elinks
+emerge www-client/w3m
+emerge www-client/lynx
 ```
 
 ### 9. Configuring the bootloader
